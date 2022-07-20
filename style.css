@@ -1,0 +1,302 @@
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+     /* BASE STYLES
+     /*******************************************/
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+    color: rgb(77, 109, 117);
+    font-family: "Montserrat", sans-serif;
+    background-image: url('media/path191.png');
+    background-color: #38393c;
+  }
+  
+  a:hover {
+    color: rgb(235, 240, 237);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #140000;
+    filter: drop-shadow(1px 3px 8px #000);
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #140000;
+    filter: drop-shadow(1px 3px 8px #000);
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+  }
+  
+  h1 {
+    margin: 0.2rem;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+  }
+  
+  h2 {
+    writing-mode: tb-rl;
+    text-orientation: upright;
+    font-size: 2rem;
+    letter-spacing: 20px;
+    padding: 0 2rem;
+    font-weight: 700;
+  }
+
+  
+
+  .work,
+  .welcome {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  /* Welcome Section */
+  
+  
+  .work,
+  .about,
+  .contact {
+    padding-top: 5.5rem;
+  }
+  
+  .welcome-subsection {
+   /*display: flex;
+    flex-direction: column;
+    flex-grow: 0; */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    padding: 0 3rem;
+    text-align: center;
+  }
+  
+  .welcome-subsection a {
+    background-color:rgb(155, 157, 150) ;
+    border-radius: .5rem;
+    color: #240c0c;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 4rem;
+    width: 4.5rem;
+    margin: 0.7rem auto;
+  }
+  
+  .welcome-subsection a:hover {
+    background-color: gray;
+  }
+  
+  .welcome-subsection img {
+    
+    padding-bottom: 1.5rem;
+    max-width: 250px;
+    width: 100%;
+    float: left;
+    
+  
+  }
+  .welcome-subsection p {
+    font-size: 1.5rem;
+    float: right;
+
+
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem;
+    list-style-type: none;
+    text-decoration: none;
+    padding-right: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0.2rem;
+    color: white;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* Mosaic section */
+  
+  .work {
+    display: flex;
+  
+  }
+  
+  .work h2 {
+    position: static;
+    top: 6rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* height:100vh; */
+    justify-items: center;
+    grid-gap: 1rem;
+    /* grid-row-gap: 1.2rem */
+    padding-right: 1rem;
+  }
+  
+  
+  .grid-item {
+    position: relative;
+    text-align: center;
+    opacity: 1;
+  } 
+  
+  .grid-item > span {
+    position: absolute;
+    font-size: small;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  .grid-item:hover > span {
+    opacity: 1;
+    display: inline;
+  }
+  
+  .grid-item:hover > img {
+    opacity: 0.5;
+  }
+  /*
+  .grid-item-large {
+    grid-row: span 2;
+  }
+  */
+  /* About section I edited it out per customer request
+  .about, */
+  .contact {
+    display: flex;
+    align-items: center;
+    font-size: large;
+  }
+  
+  /*edited out about section per customer request
+   .about {
+    height:50rem;
+  } */
+  
+  /*.about-paragraph {
+    text-align: center;
+    margin-right: 2em;
+  }
+  
+  .about p {
+    padding: 0.5rem;
+  }
+  
+  .about img {
+    display: none;
+  }
+  */
+  /* Contact Section */
+  /* .contact{
+    background-image: linear-gradient(#240c0c,#424033);
+    height: 50rem;
+  } */
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .contact span {
+    font-size: x-large;
+    padding-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000;
+    height: 3rem;
+    padding-left: 4rem;
+  }
+  
+  /* Media queries */
+  @media screen and (min-width: 674px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .about-content {
+      --min: 15ch;
+      --gap: 1rem;
+      display: grid;
+      grid-gap: var(--gap);
+      /* min() with 100% prevents overflow
+    in extra narrow spaces */
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+      align-items: center;
+    }
+    .about p,
+    .contact-content {
+      font-size: x-large;
+      line-height: 2rem;
+    }
+    .about img {
+      display: block;
+      padding-right:1rem;
+    }
+    .contact span {
+      font-size: xx-large;
+    }
+  }
